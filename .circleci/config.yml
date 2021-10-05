@@ -5,7 +5,7 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Build app
+          name: Build App
           command: set -o pipefail && time xcodebuild -workspace Loop.xcworkspace -scheme 'Loop (Workspace)' -destination 'name=iPhone 8' build | xcpretty
           environment:
             SCAN_DEVICE: iPhone 8
